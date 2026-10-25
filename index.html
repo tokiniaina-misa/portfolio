@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rasetarinera Toki — Portfolio</title>
+  <meta name="description" content="Junior Cybersécurité & DevOps" />
+  <meta name="theme-color" content="#04080e" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071019'/%3E%3Cpath d='M15 21l11 11-11 11' stroke='%237df3c5' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M33 43h16' stroke='%2367e8f9' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="min-h-screen bg-ink-950 font-sans text-slate-300 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-ink-950/90 backdrop-blur">
+    <div class="mx-auto flex h-14 max-w-5xl items-center justify-between px-5">
+      <a href="#accueil" class="font-mono text-sm text-slate-200">
+        Toki<span class="text-mint-300">.dev</span>
+      </a>
+
+      <nav class="hidden gap-6 md:flex" aria-label="Navigation">
+        <a data-nav href="#accueil" class="nav-link" aria-current="page">Accueil</a>
+        <a data-nav href="#projets" class="nav-link">Projets</a>
+        <a data-nav href="#competences" class="nav-link">Compétences</a>
+        <a data-nav href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button
+        id="menu-btn"
+        type="button"
+        class="grid h-10 w-10 place-items-center rounded border border-white/10 md:hidden"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav id="mobile-menu" hidden class="border-t border-white/5 px-5 py-3 font-mono text-sm md:hidden">
+      <a class="block py-2" href="#accueil">01 Accueil</a>
+      <a class="block py-2" href="#projets">02 Projets</a>
+      <a class="block py-2" href="#competences">03 Compétences</a>
+      <a class="block py-2" href="#contact">04 Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Accueil -->
+    <section id="accueil" class="mx-auto grid max-w-5xl gap-10 px-5 py-14 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 rounded-full border border-mint-400/20 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-slate-400">
+          <span class="dot"></span>
+          Portfolio
+        </p>
+
+        <p class="mt-6 font-mono text-sm text-slate-400">
+          <span class="text-mint-300">guest@portfolio</span>:<span class="text-cyan-400">~</span>$ whoami
+        </p>
+
+        <h1 class="mt-3 font-mono text-4xl font-semibold tracking-tighter text-white sm:text-5xl">
+          <span class="text-mint-300">[</span>Rasetarinera Toki<span class="text-mint-300">]</span>
+        </h1>
+
+        <p class="mt-5 max-w-md text-lg leading-relaxed">
+          Junior en <strong class="font-medium text-white">cybersécurité</strong> et
+          <strong class="font-medium text-white">DevOps</strong>.  
+          Intéressé par la sécurité offensive, l’infrastructure et l’automatisation.
+        </p>
+
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#projets" class="rounded-lg bg-mint-300 px-4 py-2.5 font-mono text-xs uppercase tracking-wider text-ink-950">
+            Voir les projets
+          </a>
+          <a href="#contact" class="rounded-lg border border-white/15 px-4 py-2.5 font-mono text-xs uppercase tracking-wider text-slate-200">
+            Me contacter
+          </a>
+        </div>
+
+        <dl class="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/5 pt-5 font-mono text-[10px] uppercase tracking-widest">
+          <div>
+            <dt class="text-slate-500">Localisation</dt>
+            <dd class="mt-1 text-slate-300">Antananarivo</dd>
+          </div>
+          <div>
+            <dt class="text-slate-500">Focus</dt>
+            <dd class="mt-1 text-slate-300">Cybersécurité & DevOps</dd>
+          </div>
+          <div>
+            <dt class="text-slate-500">Statut</dt>
+            <dd class="mt-1 text-mint-300">Ouvert aux opportunités</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Terminal -->
+      <div class="hud overflow-hidden rounded-xl border border-mint-400/20 bg-ink-900">
+        <div class="flex items-center justify-between border-b border-white/10 px-4 py-2.5">
+          <div class="flex gap-1.5">
+            <span class="h-2.5 w-2.5 rounded-full bg-orange-400/80"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-amber-300/70"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-mint-300/80"></span>
+          </div>
+          <span class="font-mono text-[10px] text-slate-500">~/profil</span>
+        </div>
+
+        <div class="space-y-1 p-5 font-mono text-xs leading-6">
+          <p><span class="text-mint-300">➜</span> whoami</p>
+          <p>Rasetarinera Toki</p>
+
+          <p class="mt-3"><span class="text-mint-300">➜</span> cat focus.txt</p>
+          <p>Cybersécurité · DevOps · Automatisation</p>
+
+          <p class="mt-3"><span class="text-mint-300">➜</span> ./status --check</p>
+          <p><span class="text-mint-300">[ OK ]</span> Profil chargé</p>
+
+          <p class="mt-3"><span class="text-mint-300">➜</span> <span class="cursor"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="border-y border-white/5 bg-ink-900/60">
+      <div class="mx-auto max-w-5xl px-5 py-14">
+        <p class="font-mono text-[11px] text-slate-500">
+          <span class="text-mint-300">01</span> // projets
+        </p>
+        <h2 class="mt-1 font-mono text-2xl text-white">Projets</h2>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="hud rounded-xl border border-white/10 bg-ink-950/70 p-5">
+            <div class="flex justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
+              <span>proj_001</span>
+              <span class="text-mint-300">Actif</span>
+            </div>
+            <h3 class="mt-4 text-lg text-white">CTF Root-Me</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              Challenges de sécurité web et recherche de vulnérabilités en environnement d’entraînement.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="tag">Web</span>
+              <span class="tag">Pentest</span>
+              <span class="tag">CTF</span>
+            </div>
+            <p class="mt-3">
+              <a href="https://www.root-me.org/Toki_m" target="_blank" rel="noreferrer" class="font-mono text-[11px] text-mint-300 hover:underline">
+                Voir le profil →
+              </a>
+            </p>
+          </article>
+
+          <article class="hud rounded-xl border border-white/10 bg-ink-950/70 p-5">
+            <div class="flex justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
+              <span>proj_002</span>
+              <span class="text-cyan-300">Labo</span>
+            </div>
+            <h3 class="mt-4 text-lg text-white">Tests d’intrusion</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              Simulation de scénarios d’attaque en laboratoire avec Metasploit, SET et PsExec.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="tag">Metasploit</span>
+              <span class="tag">SET</span>
+              <span class="tag">PsExec</span>
+            </div>
+          </article>
+
+          <article class="hud rounded-xl border border-white/10 bg-ink-950/70 p-5">
+            <div class="flex justify-between font-mono text-[10px] uppercase tracking-widest text-slate-500">
+              <span>proj_003</span>
+              <span class="text-mint-300">Terminé</span>
+            </div>
+            <h3 class="mt-4 text-lg text-white">API REST Java</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              API REST développée en Java, conteneurisée avec Docker et déployée.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="tag">Java</span>
+              <span class="tag">Docker</span>
+              <span class="tag">REST</span>
+            </div>
+            <p class="mt-3">
+              <a href="https://java-api-itoo.onrender.com" target="_blank" rel="noreferrer" class="font-mono text-[11px] text-mint-300 hover:underline">
+                Voir l’API →
+              </a>
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="mx-auto max-w-5xl px-5 py-14">
+      <p class="font-mono text-[11px] text-slate-500">
+        <span class="text-mint-300">02</span> // compétences
+      </p>
+      <h2 class="mt-1 font-mono text-2xl text-white">Compétences</h2>
+
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        <article class="hud rounded-xl border border-white/10 bg-ink-900/70 p-5">
+          <h3 class="text-white">Pentest</h3>
+          <ul class="mt-3 space-y-1.5 font-mono text-xs text-slate-400">
+            <li>> Nmap</li>
+            <li>> Metasploit</li>
+            <li>> SET</li>
+            <li>> CTF</li>
+          </ul>
+        </article>
+
+        <article class="hud rounded-xl border border-white/10 bg-ink-900/70 p-5">
+          <h3 class="text-white">Systèmes</h3>
+          <ul class="mt-3 space-y-1.5 font-mono text-xs text-slate-400">
+            <li>> Linux</li>
+            <li>> Proxmox / VirtualBox</li>
+            <li>> Docker</li>
+            <li>> Bash</li>
+          </ul>
+        </article>
+
+        <article class="hud rounded-xl border border-white/10 bg-ink-900/70 p-5">
+          <h3 class="text-white">Automatisation</h3>
+          <ul class="mt-3 space-y-1.5 font-mono text-xs text-slate-400">
+            <li>> Terraform</li>
+            <li>> Ansible</li>
+            <li>> GitHub Actions</li>
+            <li>> GitLab CI/CD</li>
+          </ul>
+        </article>
+
+        <article class="hud rounded-xl border border-white/10 bg-ink-900/70 p-5">
+          <h3 class="text-white">Réseaux</h3>
+          <ul class="mt-3 space-y-1.5 font-mono text-xs text-slate-400">
+            <li>> TCP/IP</li>
+            <li>> DNS / DHCP</li>
+            <li>> ISO 27001</li>
+            <li>> MITRE ATT&CK</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="border-y border-white/5 bg-ink-900/60">
+      <div class="mx-auto grid max-w-5xl gap-8 px-5 py-14 lg:grid-cols-2">
+        <div>
+          <p class="font-mono text-[11px] text-slate-500">
+            <span class="text-mint-300">03</span> // profil
+          </p>
+          <h2 class="mt-1 font-mono text-2xl text-white">À propos</h2>
+
+          <p class="mt-5 text-[15px] leading-7">
+            En formation en cybersécurité, je m’oriente vers la sécurité offensive.  
+            Je m’appuie sur mon expérience en infrastructure et en DevOps pour progresser.
+          </p>
+
+          <p class="mt-3 text-slate-400 leading-relaxed">
+            J’apprends principalement par la pratique : laboratoires, CTF et projets personnels.
+          </p>
+
+          <blockquote class="mt-6 rounded-lg border border-mint-400/15 bg-ink-950/70 p-4 font-mono text-sm text-slate-200">
+            <span class="text-mint-300">>_</span> Comprendre, automatiser, sécuriser
+          </blockquote>
+        </div>
+
+        <aside class="hud self-start rounded-xl border border-white/10 bg-ink-950/80 p-5">
+          <div class="flex items-center gap-3 border-b border-white/5 pb-4">
+            <div class="grid h-12 w-12 place-items-center rounded-lg border border-mint-400/25 font-mono text-mint-300">
+              RT
+            </div>
+            <div>
+              <p class="text-white">Rasetarinera Toki</p>
+              <p class="font-mono text-[11px] text-slate-400">Junior Cybersécurité & DevOps</p>
+            </div>
+          </div>
+
+          <dl class="mt-4 space-y-2 font-mono text-[11px]">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">LOCALISATION</dt>
+              <dd>Antananarivo</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">FORMATION</dt>
+              <dd>Cybersécurité</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">OBJECTIF</dt>
+              <dd>Stage / Opportunité</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-500">DISPO</dt>
+              <dd class="text-mint-300">Ouvert</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mx-auto max-w-5xl px-5 py-14">
+      <div class="hud rounded-2xl border border-mint-400/15 bg-ink-900/70 p-6 sm:p-8">
+        <p class="font-mono text-[11px] text-slate-500">
+          <span class="text-mint-300">04</span> // contact
+        </p>
+        <h2 class="mt-1 font-mono text-2xl text-white">Contact</h2>
+        <p class="mt-3 text-sm text-slate-400">
+          Pour toute question ou opportunité, vous pouvez m’écrire.
+        </p>
+
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="mailto:misarasetarinera@gmail.com" class="font-mono text-sm text-slate-200 hover:text-mint-300">
+            misarasetarinera@gmail.com
+          </a>
+          <button
+            id="copy-email"
+            type="button"
+            data-email="misarasetarinera@gmail.com"
+            class="rounded border border-white/10 px-3 py-1.5 font-mono text-[11px] text-slate-400"
+          >
+            Copier
+          </button>
+        </div>
+        <p id="copy-feedback" class="mt-1.5 hidden font-mono text-[10px] text-mint-300">Copié</p>
+
+        <div class="mt-5 flex flex-wrap gap-2">
+          <a class="tag" href="https://www.root-me.org/Toki_m" target="_blank" rel="noreferrer">Root-Me</a>
+          <a class="tag" href="https://www.credly.com/users/misa-tokiniaina-rasetarinera/badges" target="_blank" rel="noreferrer">Credly</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-6">
+      <p class="font-mono text-[11px] text-slate-500">
+        © <span id="year">2026</span> Rasetarinera Toki
+      </p>
+      <a href="#accueil" class="font-mono text-[11px] text-slate-500 hover:text-mint-300">
+        ↑ Haut
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
